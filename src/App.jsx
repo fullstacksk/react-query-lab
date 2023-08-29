@@ -20,9 +20,9 @@ function App() {
   if (postQuery.isError)
     return <pre>{JSON.stringify(postQuery.error)}</pre>
   return (
-    <>
-      <h1>TanStack Query</h1>
-    </>
+    <div>
+      {postQuery.data.map((post, i) => <p key= {i}>{ post.title}</p>)}
+   </div>
   )
 }
 function wait(duration) {
