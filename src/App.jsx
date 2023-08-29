@@ -5,7 +5,8 @@ function App() {
 
   return (
     <>
-      <h1>Count : {count}</h1>
+      <h1>TanStack Query [React Query]</h1>
+      <h3>Count : {count}</h3>
       <button onClick={()=>setCount(count + 1)}>Increment</button>
     </>
   )
