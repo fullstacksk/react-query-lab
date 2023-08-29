@@ -33,7 +33,7 @@ function App() {
   return (
     <div>
       {postQuery.data.map((post, i) => <p key={i}>{post.title}</p>)}
-      <button onClick={()=>newPostMutation.mutate("New Post")}>Add Post</button>
+      <button onClick={()=>newPostMutation.mutate("New Post")} disabled={newPostMutation.isLoading}>Add Post</button>
    </div>
   )
 }
